@@ -79,7 +79,10 @@ export function matchesKeyboardEvent(
     // event.key (e.g., Option+A → 'å', Option+' → 'æ', Option+P → 'π'), but
     // event.code still reflects the physical key. We want Alt+A to match even
     // when Option+A fires event.key='å'.
-    if (isSingleLetterKey(eventKey) && (/^[A-Za-z]$/.test(eventKey) || !event.altKey)) {
+    if (
+      isSingleLetterKey(eventKey) &&
+      (/^[A-Za-z]$/.test(eventKey) || !event.altKey)
+    ) {
       return false
     }
   }
