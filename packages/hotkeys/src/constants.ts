@@ -431,7 +431,11 @@ export function normalizeKeyName(key: string): string {
 
   // Check if it's a single letter (normalize to uppercase)
   if (isSingleLetterKey(key)) {
-    return key.toUpperCase()
+    const upper = key.toUpperCase()
+    // Some Unicode letters (e.g., 'ß') uppercase to multi-character sequences
+    // ('SS'). Avoid changing the string length so the rest of the matching
+    // logic can rely on a stable single-character key value.
+    return upper.length === 1 ? upper : key
   }
 
   // Check if it's a function key (normalize case)

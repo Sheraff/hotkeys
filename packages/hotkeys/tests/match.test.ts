@@ -335,6 +335,62 @@ describe('matchesKeyboardEvent', () => {
         matchesKeyboardEvent(event, 'Control+Ф' as Hotkey, 'windows'),
       ).toBe(true)
     })
+
+    it('should fall back to event.code for macOS Option+letter producing non-ASCII letters (Alt+A → å)', () => {
+      // macOS: Option+A produces 'å' in event.key, but event.code is 'KeyA'
+      const event = createKeyboardEvent('å', {
+        altKey: true,
+        code: 'KeyA',
+      })
+      expect(matchesKeyboardEvent(event, 'Alt+A')).toBe(true)
+    })
+
+    it('should fall back to event.code for macOS Option+letter combinations (various chars)', () => {
+      const cases: Array<[string, string, string]> = [
+        ['π', 'KeyP', 'P'], // Option+P → π
+        ['ø', 'KeyO', 'O'], // Option+O → ø
+        ['ƒ', 'KeyF', 'F'], // Option+F → ƒ
+        ['ç', 'KeyC', 'C'], // Option+C → ç
+        ['ß', 'KeyS', 'S'], // Option+S → ß
+        ['µ', 'KeyM', 'M'], // Option+M → µ
+        ['œ', 'KeyQ', 'Q'], // Option+Q → œ
+      ]
+
+      for (const [char, code, letter] of cases) {
+        const event = createKeyboardEvent(char, {
+          altKey: true,
+          code,
+        })
+        expect(matchesKeyboardEvent(event, `Alt+${letter}`)).toBe(true)
+      }
+    })
+
+    it('should fall back to event.code for macOS Option+Shift+letter combinations', () => {
+      const cases: Array<[string, string, string]> = [
+        ['Á', 'KeyY', 'Y'], // Option+Shift+Y → Á
+        ['Ç', 'KeyC', 'C'], // Option+Shift+C → Ç
+        ['Å', 'KeyA', 'A'], // Option+Shift+A → Å
+        ['Ø', 'KeyO', 'O'], // Option+Shift+O → Ø
+        ['Œ', 'KeyQ', 'Q'], // Option+Shift+Q → Œ
+      ]
+
+      for (const [char, code, letter] of cases) {
+        const event = createKeyboardEvent(char, {
+          altKey: true,
+          shiftKey: true,
+          code,
+        })
+        expect(matchesKeyboardEvent(event, `Alt+Shift+${letter}`)).toBe(true)
+      }
+    })
+
+    it('should NOT fall back for non-ASCII letters without Alt key (keyboard layout letters)', () => {
+      // Russian layout without Alt key: ф on KeyA should not match Alt+A
+      const event = createKeyboardEvent('ф', {
+        code: 'KeyA',
+      })
+      expect(matchesKeyboardEvent(event, 'A')).toBe(false)
+    })
   })
 
   describe('dead key fallback (macOS Option+letter)', () => {
