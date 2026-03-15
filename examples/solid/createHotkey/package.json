@@ -11,7 +11,7 @@
     "test:types": "tsc"
   },
   "dependencies": {
-    "@tanstack/devtools-utils": "^0.3.2",
+    "@tanstack/devtools-utils": "^0.4.0",
     "@tanstack/solid-devtools": "0.7.30",
     "@tanstack/solid-hotkeys": "^0.4.1",
     "@tanstack/solid-hotkeys-devtools": "^0.4.1",
