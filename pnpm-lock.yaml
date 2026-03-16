@@ -729,8 +729,8 @@ importers:
   examples/solid/createHeldKeys:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -754,8 +754,8 @@ importers:
   examples/solid/createHotkey:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -785,8 +785,8 @@ importers:
   examples/solid/createHotkeyRecorder:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -810,8 +810,8 @@ importers:
   examples/solid/createHotkeySequence:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -835,8 +835,8 @@ importers:
   examples/solid/createKeyHold:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -1152,8 +1152,8 @@ importers:
   packages/preact-hotkeys-devtools:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/hotkeys-devtools':
         specifier: workspace:*
         version: link:../hotkeys-devtools
@@ -1202,8 +1202,8 @@ importers:
   packages/react-hotkeys-devtools:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/hotkeys-devtools':
         specifier: workspace:*
         version: link:../hotkeys-devtools
@@ -1258,8 +1258,8 @@ importers:
   packages/solid-hotkeys-devtools:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/hotkeys-devtools':
         specifier: workspace:*
         version: link:../hotkeys-devtools
@@ -1315,8 +1315,8 @@ importers:
   packages/vue-hotkeys-devtools:
     dependencies:
       '@tanstack/devtools-utils':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
+        specifier: ^0.4.0
+        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/hotkeys-devtools':
         specifier: workspace:*
         version: link:../hotkeys-devtools
@@ -3933,27 +3933,6 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       solid-js: '>=1.9.7'
-
-  '@tanstack/devtools-utils@0.3.2':
-    resolution: {integrity: sha512-fu9wmE2bHigiE1Lc5RFSchgdN35wX15TqfB4O4vJa6SqX9JH2ov57J60u18lheROaBiteloPzcCbkLNpx0aacw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@types/react': '>=17.0.0'
-      preact: '>=10.0.0'
-      react: '>=17.0.0'
-      solid-js: '>=1.9.7'
-      vue: '>=3.2.0'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      preact:
-        optional: true
-      react:
-        optional: true
-      solid-js:
-        optional: true
-      vue:
-        optional: true
 
   '@tanstack/devtools-utils@0.4.0':
     resolution: {integrity: sha512-KsGzYhA8L/fCNgyyMyoUy+TKtx+DjNbzWwqH6wXL48Llzo7kvV9RynYJlaO8Qkzwm+NdHXSgsljQNjQ3CKPpZA==}
@@ -11492,18 +11471,6 @@ snapshots:
       dayjs: 1.11.19
       goober: 2.1.18(csstype@3.2.3)
       solid-js: 1.9.11
-    transitivePeerDependencies:
-      - csstype
-
-  '@tanstack/devtools-utils@0.3.2(@types/react@19.2.14)(csstype@3.2.3)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))':
-    dependencies:
-      '@tanstack/devtools-ui': 0.5.0(csstype@3.2.3)(solid-js@1.9.11)
-    optionalDependencies:
-      '@types/react': 19.2.14
-      preact: 10.28.4
-      react: 19.2.4
-      solid-js: 1.9.11
-      vue: 3.5.29(typescript@5.9.3)
     transitivePeerDependencies:
       - csstype
 
