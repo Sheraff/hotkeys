@@ -728,9 +728,6 @@ importers:
 
   examples/solid/createHeldKeys:
     dependencies:
-      '@tanstack/devtools-utils':
-        specifier: ^0.4.0
-        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -753,9 +750,6 @@ importers:
 
   examples/solid/createHotkey:
     dependencies:
-      '@tanstack/devtools-utils':
-        specifier: ^0.4.0
-        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -784,9 +778,6 @@ importers:
 
   examples/solid/createHotkeyRecorder:
     dependencies:
-      '@tanstack/devtools-utils':
-        specifier: ^0.4.0
-        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -809,9 +800,6 @@ importers:
 
   examples/solid/createHotkeySequence:
     dependencies:
-      '@tanstack/devtools-utils':
-        specifier: ^0.4.0
-        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
@@ -834,9 +822,6 @@ importers:
 
   examples/solid/createKeyHold:
     dependencies:
-      '@tanstack/devtools-utils':
-        specifier: ^0.4.0
-        version: 0.4.0(@types/react@19.2.14)(preact@10.28.4)(react@19.2.4)(solid-js@1.9.11)(vue@3.5.29(typescript@5.9.3))
       '@tanstack/solid-devtools':
         specifier: 0.7.30
         version: 0.7.30(csstype@3.2.3)(solid-js@1.9.11)
