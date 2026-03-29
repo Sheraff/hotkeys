@@ -5,11 +5,10 @@ import { isModifierKey, parseHotkey } from './parse'
 import { matchesKeyboardEvent } from './match'
 import {
   defaultHotkeyOptions,
-  getActiveElementForListenerTarget,
   getDefaultIgnoreInputs,
   handleConflict,
   isEventForTarget,
-  isInputElement,
+  shouldIgnoreInputEvent,
 } from './manager.utils'
 import type { HotkeyOptions } from './hotkey-manager'
 import type {
@@ -446,7 +445,7 @@ export class SequenceManager {
 
     const now = Date.now()
 
-    for (const id of targetRegs) {
+    registrationIds: for (const id of targetRegs) {
       const registration = this.#registrations.get(id)
       if (!registration) {
         continue
@@ -462,12 +461,8 @@ export class SequenceManager {
 
       // Check if we should ignore input elements (defaults to true)
       if (registration.options.ignoreInputs !== false) {
-        const focused = getActiveElementForListenerTarget(target)
-        const shouldIgnore = [focused, event.target].some(
-          (el) => isInputElement(el) && el !== registration.target,
-        )
-        if (shouldIgnore) {
-          continue
+        if (shouldIgnoreInputEvent(event, target, registration.target)) {
+          continue registrationIds
         }
       }
 

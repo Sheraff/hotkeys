@@ -46,9 +46,9 @@ Surprisingly, in our experience, even AI often struggles to get hotkey managemen
   - Platform-aware formatting (e.g., `⌘⇧S` on Mac vs `Ctrl+Shift+S` on Windows) for cheatsheet UIs
 
 - **Framework Adapters**
-  - React and Preact hooks, Solid primitives, Angular inject APIs, and Vue composables
+  - React and Preact hooks, Solid primitives, Angular inject APIs, Vue composables, and Lit controllers/decorators
 
 - **Awesome Devtools!**
   - See all currently registered hotkeys, held keys, and more in real-time.
 
-For a complete walkthrough, see the [React Quick Start](framework/react/quick-start), [Angular Quick Start](framework/angular/quick-start), or [Vue Quick Start](framework/vue/quick-start).
+For a complete walkthrough, see the [React Quick Start](framework/react/quick-start), [Angular Quick Start](framework/angular/quick-start), [Vue Quick Start](framework/vue/quick-start) or [Lit Quick Start](framework/lit/quick-start).

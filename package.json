@@ -17,7 +17,7 @@
     "clean": "find . -name 'dist' -type d -prune -exec rm -rf {} +",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf {} +",
     "clean:all": "pnpm run clean && pnpm run clean:node_modules",
-    "copy:readme": "cp README.md packages/hotkeys/README.md && cp README.md packages/hotkeys-devtools/README.md && cp README.md packages/angular-hotkeys/README.md && cp README.md packages/react-hotkeys/README.md && cp README.md packages/react-hotkeys-devtools/README.md && cp README.md packages/preact-hotkeys/README.md && cp README.md packages/preact-hotkeys-devtools/README.md && cp README.md packages/solid-hotkeys/README.md && cp README.md packages/solid-hotkeys-devtools/README.md && cp README.md packages/vue-hotkeys/README.md && cp README.md packages/vue-hotkeys-devtools/README.md && cp README.md packages/svelte-hotkeys/README.md",
+    "copy:readme": "cp README.md packages/hotkeys/README.md && cp README.md packages/hotkeys-devtools/README.md && cp README.md packages/angular-hotkeys/README.md && cp README.md packages/react-hotkeys/README.md && cp README.md packages/react-hotkeys-devtools/README.md && cp README.md packages/preact-hotkeys/README.md && cp README.md packages/preact-hotkeys-devtools/README.md && cp README.md packages/solid-hotkeys/README.md && cp README.md packages/solid-hotkeys-devtools/README.md && cp README.md packages/vue-hotkeys/README.md && cp README.md packages/vue-hotkeys-devtools/README.md && cp README.md packages/lit-hotkeys/README.md && cp README.md packages/svelte-hotkeys/README.md",
     "dev": "pnpm run watch",
     "format": "prettier --experimental-cli --ignore-unknown '**/*' --write",
     "generate-docs": "node scripts/generate-docs.ts && pnpm run copy:readme",
@@ -50,6 +50,11 @@
       "test:sherif"
     ]
   },
+  "pnpm": {
+    "overrides": {
+      "rolldown": "1.0.0-rc.12"
+    }
+  },
   "devDependencies": {
     "@changesets/cli": "^2.30.0",
     "@faker-js/faker": "^10.4.0",
@@ -80,6 +85,8 @@
     "@tanstack/angular-hotkeys": "workspace:*",
     "@tanstack/hotkeys": "workspace:*",
     "@tanstack/hotkeys-devtools": "workspace:*",
+    "@tanstack/lit-hotkeys": "workspace:*",
+    "@tanstack/lit-hotkeys-devtools": "workspace:*",
     "@tanstack/preact-hotkeys": "workspace:*",
     "@tanstack/preact-hotkeys-devtools": "workspace:*",
     "@tanstack/react-hotkeys": "workspace:*",
@@ -89,5 +96,8 @@
     "@tanstack/svelte-hotkeys": "workspace:*",
     "@tanstack/vue-hotkeys": "workspace:*",
     "@tanstack/vue-hotkeys-devtools": "workspace:*"
+  },
+  "volta": {
+    "node": "24.14.1"
   }
 }
