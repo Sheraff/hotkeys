@@ -41,7 +41,10 @@ export function injectKeyHold(
   key: IndividualKey | (() => IndividualKey),
 ): Signal<boolean> {
   const tracker = getKeyStateTracker()
-  const heldKeysSelector = injectSelector(tracker.store, (state) => state.heldKeys)
+  const heldKeysSelector = injectSelector(
+    tracker.store,
+    (state) => state.heldKeys,
+  )
 
   return computed(() => {
     const resolvedKey = typeof key === 'function' ? key() : key
