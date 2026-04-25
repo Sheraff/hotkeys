@@ -19,6 +19,6 @@
     "@tanstack/preact-devtools": "0.10.2",
     "@tanstack/preact-hotkeys-devtools": "^0.7.0",
     "typescript": "6.0.3",
-    "vite": "^8.0.9"
+    "vite": "^8.0.10"
   }
 }
