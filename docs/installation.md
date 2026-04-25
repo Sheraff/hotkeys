@@ -24,7 +24,7 @@ Each framework package re-exports everything from the core `@tanstack/hotkeys` p
 
 <!-- ::start:framework -->
 
-# React
+### React
 
 Start with the [Quick Start](./framework/react/quick-start) guide. If you want the integrated devtools panel, also install:
 
@@ -32,7 +32,7 @@ Start with the [Quick Start](./framework/react/quick-start) guide. If you want t
 
 <!-- ::start:framework -->
 
-# Preact
+### Preact
 
 Start with the [API reference](./framework/preact/reference/index) and [guides](./framework/preact/guides/hotkeys). If you want the integrated devtools panel, also install:
 
@@ -40,7 +40,7 @@ Start with the [API reference](./framework/preact/reference/index) and [guides](
 
 <!-- ::start:framework -->
 
-# Solid
+### Solid
 
 Start with the [API reference](./framework/solid/reference/index) and [guides](./framework/solid/guides/hotkeys). If you want the integrated devtools panel, also install:
 
@@ -48,7 +48,7 @@ Start with the [API reference](./framework/solid/reference/index) and [guides](.
 
 <!-- ::start:framework -->
 
-# Svelte
+### Svelte
 
 Start with the [Quick Start](./framework/svelte/quick-start) guide and the Svelte-specific [guides](./framework/svelte/guides/hotkeys).
 
@@ -56,7 +56,7 @@ Start with the [Quick Start](./framework/svelte/quick-start) guide and the Svelt
 
 <!-- ::start:framework -->
 
-# Angular
+### Angular
 
 Start with the [Quick Start](./framework/angular/quick-start) guide and the Angular-specific [guides](./framework/angular/guides/hotkeys).
 
@@ -66,7 +66,7 @@ Angular currently ships the hotkeys adapter only, so no dedicated Angular devtoo
 
 <!-- ::start:framework -->
 
-# Vue
+### Vue
 
 Start with the [Quick Start](./framework/vue/quick-start) guide and the Vue-specific [guides](./framework/vue/guides/hotkeys).
 
@@ -76,7 +76,7 @@ If you want the Vue devtools panel component, also install:
 
 <!-- ::start:framework -->
 
-# Lit
+### Lit
 
 Start with the [Quick Start](./framework/lit/quick-start) guide and the Lit-specific [guides](./framework/lit/guides/hotkeys).
 
@@ -98,7 +98,7 @@ vue: @tanstack/vue-hotkeys-devtools
 
 <!-- ::start:framework -->
 
-# React
+### React
 
 See the [devtools](./devtools) documentation for setup details.
 
@@ -106,7 +106,7 @@ See the [devtools](./devtools) documentation for setup details.
 
 <!-- ::start:framework -->
 
-# Preact
+### Preact
 
 See the [devtools](./devtools) documentation for setup details.
 
@@ -114,7 +114,7 @@ See the [devtools](./devtools) documentation for setup details.
 
 <!-- ::start:framework -->
 
-# Solid
+### Solid
 
 See the [devtools](./devtools) documentation for setup details.
 
@@ -122,7 +122,7 @@ See the [devtools](./devtools) documentation for setup details.
 
 <!-- ::start:framework -->
 
-# Vue
+### Vue
 
 See the [devtools](./devtools) documentation for setup details.
 
